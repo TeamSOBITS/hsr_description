@@ -52,23 +52,13 @@ POSSIBILITY OF SUCH DAMAGE.
             </inertial>
             <visual>
                 <geometry>
-                    <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/torso_v0/torso_light.dae" />
-                    </xacro:unless>
-                    <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/torso_v0/torso_light.obj" />
-                    </xacro:if>
+                    <mesh filename="package://hsr_meshes/meshes/torso_v0/torso_light.dae" />
                 </geometry>
             </visual>
 
             <collision>
                 <geometry>
-                    <xacro:unless value="${g_use_obj_for_collision}">
-                        <mesh filename="package://hsr_meshes/meshes/torso_v0/torso.std" />
-                    </xacro:unless>
-                    <xacro:if value="${g_use_obj_for_collision}">
-                        <mesh filename="package://hsr_meshes/meshes/torso_v0/torso.collision.obj" />
-                    </xacro:if>
+                    <mesh filename="package://hsr_meshes/meshes/torso_v0/torso.stl" />
                 </geometry>
             </collision>
         </link>
